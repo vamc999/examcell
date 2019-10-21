@@ -9,7 +9,6 @@
 <style>
 div.questionpaper {
 	width: 210mm;
-	height: 297mm;
 	margin: auto;
 }
 div.metaquestionpaper{
@@ -30,18 +29,26 @@ th {
 	text-align: center;
 }
 
-img {
+img.logo{
 	position: absolute;
 	float: left;
 	width: 3cm;
 	height: 3cm;
+}
+
+img{
+	display:block;
+	margin-left:auto; 
+	margin-right:auto; 
+	height:300; 
+	width:400
 }
 </style>
 
 </head>
 <body>
 	<div class="questionpaper">
-		<img src="images/logo.png">
+		<img src="images/logo.png" class="logo">
 		<table>
 			<tr>
 				<th colspan="2">VISHNU INSTITUTE OF TECHNOLOGY</th>
@@ -86,12 +93,12 @@ img {
 			<c:forEach items="${requestScope.questions}" var="question">
 				<tr>
 					<td style="text-align: left;vertical-align:top;"> <c:out value="(${questionno})" escapeXml="false"/> </td>
-					<td style="text-align: left;"> <c:out value="${question.question}" escapeXml="false"/> </td>
+					<td style="text-align: left;"> <c:out value="${question.question}" escapeXml="false"/></td>
 				</tr>
 				<c:choose>
 					<c:when test="${questionno%2 != 0}">
 						<tr>
-							<td colspan="2" style="text-align: center;"> (or) </td>
+							<td colspan="3" style="text-align: center;"> (or) </td>
 						</tr>
 					</c:when>
 					<c:otherwise>
@@ -103,7 +110,7 @@ img {
 		</table>
 	</div>
 	<div class="metaquestionpaper">
-		<img src="images/logo.png">
+		<img src="images/logo.png" class="logo">
 		<table>
 			<tr>
 				<th colspan="3">VISHNU INSTITUTE OF TECHNOLOGY</th>

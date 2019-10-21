@@ -99,7 +99,7 @@
    					Date:
    				</td>
    				<td>
-   					<input type="date" name="examdate" required>
+   					<input type="text" name="examdate" required>
    				</td>
    			</tr>
    			<tr>
@@ -107,7 +107,7 @@
    					Time:
    				</td>
    				<td>
-   					<input type="time" name="examtime" required>
+   					<input type="text" name="examtime" required>
    				</td>
    			</tr>
    			<tr>
