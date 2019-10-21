@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.center {
+  margin:auto ;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+h1, h2, p {
+	text-align: center;
+	color: #2b6baf;
+}
+table{
+	margin:auto;
+	width: 400px;
+
+}
+td{
+	height:40px;
+}
+body {
+	background: url(images/home-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	background-color: green;
+	color: white;
+	width: 25%;
+	height: 100%;
+	font-family:Helvetica;
+}
+input{
+	width:50%;
+	height:100%;
+	font-family:Helvetica;
+}

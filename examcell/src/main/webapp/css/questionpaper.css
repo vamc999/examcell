@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.a4{
+  width: 21cm;
+  height: 29.7cm;
+  margin: 30mm 45mm 30mm 45mm; 
+  background-color: powderblue;
+  margin: 50px;
+}
+.header{
+	text-align: center;
+	padding: 1cm;
+}
+.horizantal{
+  padding: 1cm;
+}
+.questionpaper{
+  padding: 1cm;
+}
+
