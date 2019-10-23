@@ -65,8 +65,13 @@ public class MidQuestionPaper extends HttpServlet {
 			
 			try {
 				resultSet = statement.executeQuery(sql);
+				String question=null;
 				while(resultSet.next()) {
-					questions.add(new QuestionPaperBean(resultSet.getInt(1),resultSet.getString(2)));
+					question = resultSet.getString(2);
+					if(question.charAt(question.length()-1)=='"') {
+						question = question.substring(0,question.length()-1);
+					}
+					questions.add(new QuestionPaperBean(resultSet.getInt(1),question));
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();

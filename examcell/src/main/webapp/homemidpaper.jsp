@@ -92,6 +92,7 @@
    					<input type="checkbox" name="branch" value="CSE"> CSE<br>
 					<input type="checkbox" name="branch" value="IT"> IT<br>
 					<input type="checkbox" name="branch" value="MBA"> MBA<br>
+					<input type="checkbox" name="branch" value="Common to all branches">Common to all Branches<br>
    				</td>
    			</tr>
    			<tr>

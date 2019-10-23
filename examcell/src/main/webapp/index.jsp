@@ -1,4 +1,19 @@
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // ...options...
+            [
+			  {left: "$$", right: "$$", display: true},
+			  {left: "\\(", right: "\\)", display: false},
+			  {left: "\\[", right: "\\]", display: true}
+			]
+        });
+    });
+</script>
 <script>
 function validate(){
 	var level1 = Number(document.getElementsByName('level1')[0].value);
@@ -12,8 +27,16 @@ function validate(){
 	return true;
 }
 </script>
+
+<head>
+<link rel="import" href="/math/19BS1T02/formula/1a.html">
+</head>
 <body>
 	<h2>Hello World!</h2>
+	katex.render("c = \\pm\\sqrt{a^2 + b^2}", element, {
+    throwOnError: false
+});
+	$$p=x \times y$$
 	<form name="home" action="QuestionPaperGenerator" onsubmit="return validate()" method="post">
 		<select name="subject">
 			<option value="javaprogramming">Java Programming</option>

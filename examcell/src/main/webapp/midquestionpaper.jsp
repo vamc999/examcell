@@ -35,7 +35,10 @@ img.logo{
 	width: 3cm;
 	height: 3cm;
 }
-
+img.left{
+	display: inline;
+	
+}
 img{
 	display:block;
 	margin-left:auto; 
@@ -73,8 +76,8 @@ img{
 				<td style="text-align: right;">Date: <%=request.getParameter("examdate")%></td>
 			</tr>
 			<tr>
-				<td style="text-align: left;">Year/Sem: <%=request.getParameter("year")%>
-					& <%=request.getParameter("semester")%>
+				<td style="text-align: left;">Year/Sem: <%=request.getParameter("year")%> B.Tech
+					 <%=request.getParameter("semester")%> Sem
 				</td>
 				<td style="text-align: right;">Time: <%=request.getParameter("examtime")%></td>
 			</tr>
@@ -82,8 +85,7 @@ img{
 				<td colspan="2" style="border-bottom: 2px solid black;"></td>
 			</tr>
 			<tr>
-				<td style="text-align: left;"><i>Answer all of the
-						following Each carries 10 marks.</i></td>
+				<td style="text-align: left;"><i></i></td>
 				<td style="text-align: right;">Max. Marks : 30</td>
 			</tr>
 		</table>
@@ -135,8 +137,8 @@ img{
 				<td colspan="2" style="text-align: right;">Date: <%=request.getParameter("examdate")%></td>
 			</tr>
 			<tr>
-				<td style="text-align: left;">Year/Sem: <%=request.getParameter("year")%>
-					& <%=request.getParameter("semester")%>
+				<td style="text-align: left;">Year/Sem: <%=request.getParameter("year")%> B.Tech
+					 <%=request.getParameter("semester")%> Sem
 				</td>
 				<td colspan="2" style="text-align: right;">Time: <%=request.getParameter("examtime")%></td>
 			</tr>
