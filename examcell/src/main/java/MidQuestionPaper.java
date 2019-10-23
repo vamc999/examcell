@@ -44,7 +44,7 @@ public class MidQuestionPaper extends HttpServlet {
 				String question=null;
 				while(resultSet.next()) {
 					question = resultSet.getString(2);
-					System.out.println(question);
+					//System.out.println(question);
 					if(question.charAt(question.length()-1)=='"') {
 						question = question.substring(0,question.length()-1);
 					}
