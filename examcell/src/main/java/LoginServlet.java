@@ -30,7 +30,10 @@ public class LoginServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		session = request.getSession();  
-        session.setAttribute("uname",username); 
+        session.setAttribute("uname",username);
+        if(session.getAttribute("uname")==null) {
+        	request.getRequestDispatcher("login.jsp").forward(request, response);
+        }
 		sql = "select * from userlogin where username='"+username+"' and password='"+password+"'";
 		try {
 			resultSet = statement.executeQuery(sql);

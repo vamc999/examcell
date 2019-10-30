@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="header1.jspf" %>
 <!DOCTYPE html>
 <html>
 <script type="text/javascript">
@@ -33,6 +34,10 @@
 	<title>Vishnu Institute of Technology</title>
 </head>
 <body>
+	<%
+		if(session.getAttribute("uname")==null)
+			response.sendRedirect("login.jsp");
+	%>
 	<h1> Vishnu Institute of Technology </h1>
 	<h2> Mid Question Paper </h2>
    	<form action="MidQuestionPaper" onsubmit="return validate()" method="post">
